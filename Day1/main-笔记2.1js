@@ -1,0 +1,11 @@
+import ToyReact from './toy-react/index.js';
+
+let a = <div name='a'>
+            <span>Hello </span>
+            <span>World </span> 
+            <span>!</span>
+        </div>
+
+console.log(a);
+document.body.appendChild(a);
+
