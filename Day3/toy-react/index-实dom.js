@@ -195,6 +195,9 @@ let ToyReact =  {
                     insertChildren(child);
                 }
                 else {
+                    if(child === null || child === undefined) 
+                        child = "";
+
                     // 对于不是上面三种类型的，强制转换成String
                     if(!(child instanceof Component) &&
                        !(child instanceof ElementWrapper) &&
